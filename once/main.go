@@ -61,7 +61,7 @@ func loop() {
 			select {}
 		}(max)
 		max--
-		time.Sleep(1 * time.Second)
+		time.Sleep(10 * time.Millisecond)
 
 		if max == 0 {
 			break
